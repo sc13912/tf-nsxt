@@ -10,7 +10,6 @@ provider "nsxt" {
 }
 
 
-
 data "nsxt_transport_zone" "overlay_transport_zone" {
   display_name = "TZ-Overlay"
 }
@@ -22,7 +21,6 @@ data "nsxt_logical_tier0_router" "tier0_router" {
 data "nsxt_edge_cluster" "edge_cluster" {
   display_name = "Edge-Cluster-01"
 }
-
 
 
 resource "nsxt_logical_router_link_port_on_tier0" "t0_port_to_t1" {
